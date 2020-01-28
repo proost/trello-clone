@@ -15,11 +15,7 @@ class Login extends React.Component {
   }
 
   handleChange(event) {
-    if (event.target.type === 'email') {
-      this.setState({emailAddr: event.target.value})
-    } else if (event.target.type === 'password') {
-      this.setState({password: event.target.value})
-    }
+    this.setState({emailAddr: event.target.value})
   }
 
   render() {
@@ -31,10 +27,6 @@ class Login extends React.Component {
             labelName='아이디'
             placeholder='이메일을 적어주세요'
             handleChange={this.handleChange}/>            
-          <PasswordForm
-            value={this.state.password}
-            labelName='비밀번호'
-            handleChange={this.handleChange}/>
           <SubmitButton
             labelName='로그인'
             buttonStyle='btn-primary'
