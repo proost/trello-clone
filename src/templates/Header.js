@@ -23,13 +23,13 @@ export default class MenuBar extends Component {
         </Menu.item> 
         <Menu.Item
           name='Boards'
-          to={`/Boards/${this.state.uid}`}
+          to="/Boards/"
         />
         <Menu.Menu position='right'>
           <Dropdown item text={this.state.userName}>
             <Dropdown.Menu>
               <Dropdown.Item>프로필</Dropdown.Item>
-              <Dropdown.Item>로그아웃</Dropdown.Item>
+              <Dropdown.Item to="/">로그아웃</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </Menu.Menu>
